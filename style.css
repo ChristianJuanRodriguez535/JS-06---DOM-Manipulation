@@ -1,50 +1,61 @@
+/* Estilo general del body */
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     min-height: 100vh;
+    background-color: #2b2b2b;
+    color: #fff;
     margin: 0;
 }
 
-.container {
-    text-align: center;
-    width: 80%;
-}
-
-.card-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+/* Título */
+#title {
+    font-size: 3em;
+    color: #ff5733;
     margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
+/* Botón */
+#btn-hide {
+    width: 300px; /* Ajusta el ancho del botón */
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    background-color: #33c4ff;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor de tarjetas */
+#container {
+    display: flex;
+    flex-direction: row; /* Alinea las tarjetas en una fila */
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: flex-start; /* Alinea las tarjetas a la misma altura */
+    margin-top: 20px;
+    flex-wrap: nowrap; /* Evita que se envuelvan a la siguiente línea */
+    overflow-x: auto; /* Permite desplazamiento horizontal si no caben */
+}
+
+/* Tarjetas */
 .card {
     width: 200px;
     padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ff33aa;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #444;
     text-align: center;
+    color: #fff;
+    margin: 0 10px; /* Agrega margen para espacio adicional */
 }
 
-.img-container img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    font-size: 0.9em;
-    color: #555;
-}

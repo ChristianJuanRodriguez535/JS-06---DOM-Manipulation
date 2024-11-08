@@ -6,43 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulacion del DOM</title>
 
-    <link rel="stylesheet" href="style.css">
-
+    <link href="style.css" rel="stylesheet">
 
 
 </head>
 
 <body>
 
-    <h1 id="title"></h1>
-    <input type="text" id="title-input" name="title">
-    
-    <div>
-
-        <p class="text"></p>
-        <p class="text"></p>
-        <p class="text"></p>
-        <p class="text"></p>
-        <p class="text"></p>
-    </div>
-
-    <main id="main-content"></main>
-
-    <button id="btn-hide">show/Hide</button>
+    <!-- *Contenedor principal -->
 
 
+    <div id="main-conteiner">
 
-    <div id="container" class="container">
-        <div class="card" id="card">
-            <div class="img-container" id="img-container"></div>
-        </div>
+
+        <!-- *Titulo, entrada de texto-->
+
+        <h1 id="title">C A R D S</h1>
+        
+        <!--* Boton para ocultar/mostrar -->
+        <button id="btn-hide">show/Hide</button>
+
+        
+
+         <!--* Contendor de tarjetas -->
+        <div  id="container" class="card-container"></div>
+
     </div>
 
 
-     <script src="main.js"></script>
+    <script src="main.js"></script>
     <!-- <script src="card.js"></script>  -->
-    
-    
+
+
 
 
 </body>

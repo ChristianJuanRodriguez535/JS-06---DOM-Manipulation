@@ -52,7 +52,7 @@ const renderCards = (users) => {
 
     users.forEach((user) => {
         const userCard = createCard(user);
-
+        userCard.style.display = "inline-block"
         CARD_CONTAINER.appendChild(userCard);
     });
 };
@@ -81,4 +81,23 @@ const users = [
 ];
 
 
+
 renderCards(users);
+
+
+const btnHide = document.getElementById("btn-hide");
+
+
+
+btnHide.addEventListener("click", () => {
+    
+    const container = document.getElementById("container");
+    container.style.display = container.style.display === "none" ? "block" : "none";
+    
+});
+
+
+
+
+
+
